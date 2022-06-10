@@ -13,7 +13,6 @@ Source0:        https://github.com/contour-terminal/contour/archive/refs/tags/v%
 
 BuildRequires:  cmake
 BuildRequires:  extra-cmake-modules
-# Don't use system-dep of fmt-devel for now as we need a newer one
 BuildRequires:  fmt-devel
 BuildRequires:  guidelines-support-library-devel
 BuildRequires:  fontconfig-devel
@@ -25,6 +24,7 @@ BuildRequires:  ninja-build
 BuildRequires:  pkgconf
 BuildRequires:  qt5-qtbase-devel
 BuildRequires:  qt5-qtbase-gui
+BuildRequires:  pkgconfig(catch2)
 
 Requires:       fontconfig
 Requires:       freetype
