@@ -27,7 +27,10 @@ BuildRequires:  qt5-qtbase-gui
 BuildRequires:  catch-devel
 BuildRequires:  range-v3-devel
 BuildRequires:  yaml-cpp-devel
+BuildRequires:  termbench-pro
+BuildRequires:  libunicode-devel
 
+Requires:       libunicode
 Requires:       fontconfig
 Requires:       freetype
 Requires:       harfbuzz
@@ -49,7 +52,6 @@ It is aiming for power users with a modern feature mindset.
 cmake . \
     -DCMAKE_BUILD_TYPE=RelWithDebInfo \
     -DCONTOUR_BLUR_PLATFORM_KWIN=ON \
-    -DCMAKE_INSTALL_PREFIX=/usr \
     -DPEDANTIC_COMPILER=ON \
     -DPEDANTIC_COMPILER_WERROR=ON \
     -B build \
@@ -75,7 +77,7 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 %files
 %license LICENSE.txt
 %doc README.md Changelog.md CONTRIBUTING.md TODO.md
-%{_bindir}/*
+%{_bindir}/contour
 %{_datadir}/*
 
 
