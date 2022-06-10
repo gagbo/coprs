@@ -44,12 +44,10 @@ Requires:       yaml-cpp
 contour is a modern terminal emulator, for everyday use.
 It is aiming for power users with a modern feature mindset.
 
-
 %prep
 %setup -q -n %{name}-%{version}
 
 %build
-./scripts/install-deps.sh
 cmake . \
     -DCMAKE_BUILD_TYPE=RelWithDebInfo \
     -DCONTOUR_BLUR_PLATFORM_KWIN=ON \
@@ -59,7 +57,6 @@ cmake . \
     -GNinja
 cd build
 %ninja_build
-
 
 %install
 cd build
