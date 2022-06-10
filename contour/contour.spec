@@ -2,9 +2,6 @@
 # https://docs.fedoraproject.org/en-US/packaging-guidelines/CMake/#_notes
 %undefine __cmake_in_source_build
 
-# Get contour version
-%{!?_version: %define _version %{getenv:CONTOUR_VERSION} }
-
 Name:           contour
 Version:        0.3.1.200
 Release:        1%{?dist}
@@ -18,7 +15,7 @@ BuildRequires:  cmake
 BuildRequires:  extra-cmake-modules
 # Don't use system-dep of fmt-devel for now as we need a newer one
 BuildRequires:  fmt-devel
-BuildRequires:  gsl-devel
+BuildRequires:  guidlines-support-lib-devel
 BuildRequires:  fontconfig-devel
 BuildRequires:  freetype-devel
 BuildRequires:  gcc-c++
