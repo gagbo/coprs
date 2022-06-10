@@ -10,7 +10,7 @@ BuildRequires: cmake
 BuildRequires: extra-cmake-modules
 BuildRequires: make
 BuildRequires: gcc-c++
-BuildRequires: pkgconfig(gtest_main)
+BuildRequires: pkgconfig(gtest_main) pkgconf
 
 %description
 The Guidelines Support Library (GSL) contains functions and
