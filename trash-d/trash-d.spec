@@ -25,7 +25,7 @@ gzip ./trash.man
 
 %install
 install -Dm 755 ./trash ${RPM_BUILD_ROOT}/usr/bin/trash
-install -Dm 444 ./trash.man.gz ${RPM_BUILD_ROOT}/usr/share/man1/trash.1.gz
+install -Dm 444 ./trash.man.gz ${RPM_BUILD_ROOT}/usr/share/man/trash.1.gz
 
 %check
 dub test
