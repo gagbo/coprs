@@ -7,8 +7,10 @@ License: MIT
 Source: https://github.com/microsoft/GSL/archive/refs/tags/v%{version}.tar.gz
 
 BuildRequires: cmake
+BuildRequires: extra-cmake-modules
 BuildRequires: make
 BuildRequires: gcc-c++
+BuildRequires: gtest gtest-devel
 
 %description
 The Guidelines Support Library (GSL) contains functions and
@@ -24,6 +26,9 @@ maintained by the Standard C++ Foundation.
 
 %install
 %cmake_install
+
+%check
+%cmake_test
 
 %files
 %license LICENSE
