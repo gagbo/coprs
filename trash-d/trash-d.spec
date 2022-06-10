@@ -19,11 +19,11 @@ A near drop-in replacement for rm that uses the trash bin.
 
 %build
 dub build -n
+gzip ./trash.man
 
 %install
-install -Dm 755 ./trash %{_bindir}/trash
-gzip ./trash.man
-install -Dm 444 ./trash.man.gz %{_mandir}/trash.1.gz
+install -Dm 755 ./trash ${RPM_BUILD_ROOT}/usr/bin/trash
+install -Dm 444 ./trash.man.gz ${RPM_BUILD_ROOT}/usr/share/man1/trash.1.gz
 
 %check
 dub test
