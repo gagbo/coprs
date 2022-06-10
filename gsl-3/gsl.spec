@@ -1,6 +1,6 @@
 Summary: The GNU Scientific Library for numerical analysis
 Name: gsl
-Version: 3.0
+Version: 3.1.0
 Release: 1%{?dist}
 URL: http://www.gnu.org/software/gsl/
 License: GPLv3+
