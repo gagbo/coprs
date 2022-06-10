@@ -6,13 +6,6 @@ URL: https://github.com/microsoft/GSL
 License: MIT
 Source: https://github.com/microsoft/GSL/archive/refs/tags/v{version}.tar.gz
 
-BuildRequires:  gcc
-BuildRequires:  pkgconfig
-BuildRequires:  cmake
-BuildRequires:  extra-cmake-modules
-
-Requires: pkgconfig
-
 %description
 The Guidelines Support Library (GSL) contains functions and
 types that are suggested for use by the C++ Core Guidelines
@@ -25,9 +18,8 @@ maintained by the Standard C++ Foundation.
 
 %install
 cp -r include/gsl %{buildroot}%{_includedir}
-cp cmake/guidelineSupportLibrary.cmake 
-
-%ldconfig_scriptlets
+mkdir -p %{buildroot}%{_libdir}/cmake
+cp cmake/guidelineSupportLibrary.cmake %{buildroot}%{_libdir}/cmake
 
 %files
 %license LICENSE
@@ -47,9 +39,7 @@ cp cmake/guidelineSupportLibrary.cmake
 %{_includedir}/gsl/span_ext
 %{_includedir}/gsl/string_span
 %{_includedir}/gsl/util
-/cmake/guidelineSupportLibrary.cmake
-
-
+%{_libdir}/cmake/guidelineSupportLibrary.cmake
 
 %changelog
 * Fri Jun 10 2022 Gerry Agbobada <git@gagbo.net> - 3.0-1
