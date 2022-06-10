@@ -24,7 +24,9 @@ BuildRequires:  ninja-build
 BuildRequires:  pkgconf
 BuildRequires:  qt5-qtbase-devel
 BuildRequires:  qt5-qtbase-gui
-BuildRequires:  pkgconfig(catch2)
+BuildRequires:  catch-devel
+BuildRequires:  range-v3-devel
+BuildRequires:  yaml-cpp-devel
 
 Requires:       fontconfig
 Requires:       freetype
