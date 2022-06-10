@@ -35,7 +35,7 @@ developing applications that use %{name}.
 %cmake_install
 
 %check
-%cmake_test
+# No test as fg is not usable
 
 %files
 %license LICENSE

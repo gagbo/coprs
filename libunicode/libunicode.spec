@@ -14,6 +14,7 @@ BuildRequires: gcc-c++
 BuildRequires: python3-devel
 BuildRequires: fmt-devel
 BuildRequires: pkgconfig(catch2) pkgconf
+BuildRequires:  guidelines-support-library-devel
 
 %description
 Later.
