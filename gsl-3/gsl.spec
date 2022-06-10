@@ -4,7 +4,7 @@ Version: 3.1.0
 Release: 1%{?dist}
 URL: http://www.gnu.org/software/gsl/
 License: GPLv3+
-Source: http://ftp.gnu.org/gnu/gsl/%{name}-%{version}.tar.gz
+Source: https://ftp.gnu.org/gnu/gsl/%{name}-%{version}.tar.gz
 Patch0: gsl-1.10-lib64.patch
 # http://lists.gnu.org/archive/html/bug-gsl/2015-12/msg00012.html
 Patch1: gsl-tol.patch

@@ -12,7 +12,7 @@ Summary:        Modern C++ Terminal Emulator
 
 License:        ASL 2.0
 URL:            https://github.com/contour-terminal/%{name}
-Source0:        %{name}-%{version}.tar.gz
+Source0:        https://github.com/contour-terminal/contour/archive/refs/tags/v%{version}.tar.gz
 
 BuildRequires:  cmake
 BuildRequires:  extra-cmake-modules
