@@ -10,7 +10,7 @@ BuildRequires: cmake
 BuildRequires: extra-cmake-modules
 BuildRequires: make
 BuildRequires: gcc-c++
-BuildRequires: gtest gtest-devel pkgconfig
+BuildRequires: pkgconfig(gtest_main)
 
 %description
 The Guidelines Support Library (GSL) contains functions and
@@ -51,5 +51,5 @@ maintained by the Standard C++ Foundation.
 %{_libdir}/cmake/guidelineSupportLibrary.cmake
 
 %changelog
-* Fri Jun 10 2022 Gerry Agbobada <git@gagbo.net> - 3.0-1
+* Fri Jun 10 2022 Gerry Agbobada <git@gagbo.net> - 3.1.0-1
 - Bump version to version 3
