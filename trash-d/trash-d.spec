@@ -37,3 +37,5 @@ dub test
 %{_mandir}/trash.1.*
 
 %changelog
+* Fri Jun 10 2022 Gerry Agbobada <git@gagbo.net> - 17-1
+- Initial version

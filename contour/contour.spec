@@ -76,4 +76,5 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 
 
 %changelog
-
+* Fri Jun 10 2022 Gerry Agbobada <git@gagbo.net> - 0.3.1.200-1
+- Initial version
