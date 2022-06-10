@@ -38,13 +38,12 @@ developing applications that use %{name}.
 # No test as fg is not usable
 
 %files
-%license LICENSE
+%license LICENSE.txt
 %doc README.md
-%{_libdir}/libtermbench*
+%{_libdir}/libtermbench.so
 %{_bindir}/tbp
 
 %files devel
-%license LICENSE
 %doc README.md
 %{_includedir}/termbench/
 

@@ -27,8 +27,6 @@ BuildRequires:  qt5-qtbase-gui
 BuildRequires:  catch-devel
 BuildRequires:  range-v3-devel
 BuildRequires:  yaml-cpp-devel
-BuildRequires:  termbench-pro
-BuildRequires:  libunicode-devel
 
 Requires:       libunicode
 Requires:       fontconfig
@@ -46,6 +44,7 @@ It is aiming for power users with a modern feature mindset.
 
 %prep
 %setup -q -n %{name}-%{version}
+./scripts/install_deps.sh
 
 
 %build
