@@ -11,15 +11,6 @@ License:        ASL 2.0
 URL:            https://github.com/contour-terminal/%{name}
 Source0:        https://github.com/contour-terminal/contour/archive/refs/tags/v%{version}.tar.gz
 
-## Dirty hacks section
-# NOTE: As we gave up making a prper spec file, we might as well not install
-#   fmt-devel as it's going to be manually fetched by the install-deps script
-# BuildRequires:  fmt-devel
-# BuildRequires:  guidelines-support-library-devel
-BuildRequires:  sudo
-## Dirty hacks section END
-
-
 BuildRequires:  cmake
 BuildRequires:  extra-cmake-modules
 BuildRequires:  fontconfig-devel
@@ -34,8 +25,13 @@ BuildRequires:  qt5-qtbase-gui
 BuildRequires:  catch-devel
 BuildRequires:  range-v3-devel
 BuildRequires:  yaml-cpp-devel
+BuildRequires:  fmt-devel
+BuildRequires:  guidelines-support-library-devel
+BuildRequires:  termbench-pro-devel
+BuildRequires:  libunicode-devel
 
 Requires:       libunicode
+Requires:       termbench-pro
 Requires:       fontconfig
 Requires:       freetype
 Requires:       harfbuzz
@@ -69,24 +65,17 @@ cd build
 cd build
 %ninja_install
 
-# TODO: Make this an if-statement to be decided via env var from the outside.
-# verify desktop file (not possible in github actions)
-desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
-
-
 %check
-# Skip tests as this whole spec file is quite cursed
-# without proper packaging of libunicode and
-# termbench.
-# ./build/src/crispy/crispy_test
-# ./build/src/terminal/terminal_test
+desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
+./build/src/crispy/crispy_test
+./build/src/terminal/terminal_test
 
 
 %files
 %license LICENSE.txt
 %doc README.md Changelog.md CONTRIBUTING.md TODO.md
 %{_bindir}/contour
-%{_datadir}/*
+%{_datadir}/applications/%{name}.desktop
 
 
 %changelog

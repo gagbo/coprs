@@ -39,7 +39,8 @@ developing applications that use %{name}.
 %cmake_install
 
 %check
-%cmake_test
+# Skip tests as it needs job control ('fg')
+# %cmake_test
 
 %files
 %license LICENSE

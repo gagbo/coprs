@@ -2,6 +2,24 @@
 
 This repo is my staging zone to package some software in Fedora
 
+## Contour
+
+[![Copr build status](https://copr.fedorainfracloud.org/coprs/gagbo/contour/package/contour/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/gagbo/contour/package/contour/)
+
+A [Modern C++ terminal emulator](https://github.com/contour-terminal/contour)
+
+## libunicode
+
+Runtime: [![Copr build status](https://copr.fedorainfracloud.org/coprs/gagbo/contour/package/libunicode/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/gagbo/contour/package/libunicode/)
+
+Devel: [![Copr build status](https://copr.fedorainfracloud.org/coprs/gagbo/contour/package/libunicode-devel/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/gagbo/contour/package/libunicode-devel/)
+
+## termbench-pro
+
+Runtime: [![Copr build status](https://copr.fedorainfracloud.org/coprs/gagbo/contour/package/termbench-pro/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/gagbo/contour/package/termbench-pro/)
+
+Devel: [![Copr build status](https://copr.fedorainfracloud.org/coprs/gagbo/contour/package/termbench-pro-devel/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/gagbo/contour/package/termbench-pro-devel/)
+
 ## Guidelines Support Library
 
 [![Copr build status](https://copr.fedorainfracloud.org/coprs/gagbo/contour/package/guidelines-support-lib-devel/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/gagbo/contour/package/guidelines-support-lib-devel/)
@@ -14,8 +32,3 @@ This repo contains Microsoft's implementation of GSL.
 The entire implementation is provided inline in the headers under the gsl directory.
 The implementation generally assumes a platform that implements C++14 support.
 
-## Contour
-
-[![Copr build status](https://copr.fedorainfracloud.org/coprs/gagbo/contour/package/contour/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/gagbo/contour/package/contour/)
-
-A [Modern C++ terminal emulator](https://github.com/contour-terminal/contour)
