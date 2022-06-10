@@ -2,6 +2,12 @@
 
 This repo is my staging zone to package some software in Fedora
 
+## Trash-d
+
+[![Copr build status](https://copr.fedorainfracloud.org/coprs/gagbo/trash-d/package/trash-d/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/gagbo/trash-d/package/trash-d/)
+
+[A near drop-in replacement for rm that uses the trash bin. Written in D](https://github.com/rushsteve1/trash-d)
+
 ## Contour
 
 [![Copr build status](https://copr.fedorainfracloud.org/coprs/gagbo/contour/package/contour/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/gagbo/contour/package/contour/)
