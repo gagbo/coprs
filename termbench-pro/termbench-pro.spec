@@ -25,7 +25,7 @@ The %{name}-devel package contains libraries and header files for
 developing applications that use %{name}.
 
 %prep
-%setup -n %{name}-%{version}
+%setup -q -n %{name}-%{sha}
 
 %build
 %cmake

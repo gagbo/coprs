@@ -12,6 +12,7 @@ BuildRequires: extra-cmake-modules
 BuildRequires: make
 BuildRequires: gcc-c++
 BuildRequires: python3-devel
+BuildRequires: fmt-devel
 BuildRequires: pkgconfig(catch2) pkgconf
 
 %description
@@ -26,7 +27,7 @@ The %{name}-devel package contains libraries and header files for
 developing applications that use %{name}.
 
 %prep
-%setup -n %{name}-%{sha}
+%setup -q -n %{name}-%{sha}
 
 %build
 %cmake
