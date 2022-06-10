@@ -28,6 +28,7 @@ BuildRequires:  ninja-build
 BuildRequires:  pkgconf
 BuildRequires:  qt5-qtbase-devel
 BuildRequires:  qt5-qtbase-gui
+BuildRequires:  gsl-guidelines-devel
 
 Requires:       fontconfig
 Requires:       freetype
