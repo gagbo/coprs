@@ -11,12 +11,17 @@ License:        ASL 2.0
 URL:            https://github.com/contour-terminal/%{name}
 Source0:        https://github.com/contour-terminal/contour/archive/refs/tags/v%{version}.tar.gz
 
-BuildRequires:  cmake
-BuildRequires:  extra-cmake-modules
+## Dirty hacks section
 # NOTE: As we gave up making a prper spec file, we might as well not install
 #   fmt-devel as it's going to be manually fetched by the install-deps script
 # BuildRequires:  fmt-devel
 # BuildRequires:  guidelines-support-library-devel
+BuildRequires:  sudo
+## Dirty hacks section END
+
+
+BuildRequires:  cmake
+BuildRequires:  extra-cmake-modules
 BuildRequires:  fontconfig-devel
 BuildRequires:  freetype-devel
 BuildRequires:  gcc-c++
