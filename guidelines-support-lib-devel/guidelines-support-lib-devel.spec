@@ -16,7 +16,7 @@ types that are suggested for use by the C++ Core Guidelines
 maintained by the Standard C++ Foundation.
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q -n v%{version}
 
 %build
 %cmake
