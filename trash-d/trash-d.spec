@@ -9,6 +9,7 @@ Source: %{url}/archive/refs/tags/%{version}.tar.gz
 BuildRequires:  dub
 BuildRequires:  ldc
 BuildRequires:  gcc
+BuildRequires:  libgphobos-static
 
 %description
 A near drop-in replacement for rm that uses the trash bin.
@@ -20,7 +21,9 @@ A near drop-in replacement for rm that uses the trash bin.
 dub build -n
 
 %install
-cp ./trash-d %{_bindir}/trash-d
+install -df 755 ./trash %{_bindir}/trash
+gzip ./trash.man
+install -df 444 ./trash.man.gz %{_mandir}/trash.1.gz
 
 %check
 dub test
@@ -28,6 +31,7 @@ dub test
 %files
 %license LICENSE
 %doc MANUAL.md README.md
-%{_bindir}/trash-d
+%{_bindir}/trash
+%{_mandir}/trash.1.*
 
 %changelog
