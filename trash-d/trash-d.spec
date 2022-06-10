@@ -21,9 +21,9 @@ A near drop-in replacement for rm that uses the trash bin.
 dub build -n
 
 %install
-install -df 755 ./trash %{_bindir}/trash
+install -Dm 755 ./trash %{_bindir}/trash
 gzip ./trash.man
-install -df 444 ./trash.man.gz %{_mandir}/trash.1.gz
+install -Dm 444 ./trash.man.gz %{_mandir}/trash.1.gz
 
 %check
 dub test
