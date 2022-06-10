@@ -4,7 +4,7 @@ Version: 3.1.0
 Release: 1%{?dist}
 URL: https://github.com/microsoft/GSL
 License: MIT
-Source: https://github.com/microsoft/GSL/archive/refs/tags/v{version}.tar.gz
+Source: https://github.com/microsoft/GSL/archive/refs/tags/v%{version}.tar.gz
 
 %description
 The Guidelines Support Library (GSL) contains functions and
