@@ -10,6 +10,7 @@ BuildRequires:  dub
 BuildRequires:  ldc
 BuildRequires:  gcc
 BuildRequires:  libgphobos-static
+BuildRequires:  pandoc
 
 %description
 A near drop-in replacement for rm that uses the trash bin.
@@ -19,6 +20,7 @@ A near drop-in replacement for rm that uses the trash bin.
 
 %build
 dub build -n
+pandoc -s -t man -o trash.man MANUAL.md
 gzip ./trash.man
 
 %install
