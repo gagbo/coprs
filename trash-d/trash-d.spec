@@ -8,6 +8,7 @@ Source: %{url}/archive/refs/tags/%{version}.tar.gz
 
 BuildRequires:  dub
 BuildRequires:  ldc
+BuildRequires:  gcc
 
 %description
 A near drop-in replacement for rm that uses the trash bin.
