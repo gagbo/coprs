@@ -40,7 +40,7 @@ It is aiming for power users with a modern feature mindset.
 
 
 %prep
-%setup -q -n v%{version}
+%setup -q -n %{name}-%{version}
 
 
 %build
