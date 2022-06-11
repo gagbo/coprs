@@ -1,7 +1,7 @@
 Summary: A near drop-in replacement for rm that uses the trash bin
 Name: trash-d
 Version: 17
-Release: 1%{?dist}
+Release: 2%{?dist}
 URL: https://github.com/rushsteve1/trash-d
 License: MIT
 Source: %{url}/archive/refs/tags/%{version}.tar.gz
@@ -19,7 +19,7 @@ A near drop-in replacement for rm that uses the trash bin.
 %setup -q -n %{name}-%{version}
 
 %build
-dub build -n
+dub build -n --compiler=ldc
 pandoc -s -t man -o trash.man MANUAL.md
 gzip ./trash.man
 
@@ -37,5 +37,8 @@ dub test
 %{_mandir}/trash.1.*
 
 %changelog
+* Sat Jun 11 2022 Gerry Agbobada <git@gagbo.net> - 17-2
+- Force usage of ldc to get a statically linked executable
+
 * Fri Jun 10 2022 Gerry Agbobada <git@gagbo.net> - 17-1
 - Initial version
