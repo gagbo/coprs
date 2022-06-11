@@ -19,7 +19,7 @@ A near drop-in replacement for rm that uses the trash bin.
 %setup -q -n %{name}-%{version}
 
 %build
-dub build -n --compiler=ldc
+dub build -n --compiler=ldmd2
 pandoc -s -t man -o trash.man MANUAL.md
 gzip ./trash.man
 
