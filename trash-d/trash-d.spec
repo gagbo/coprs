@@ -8,6 +8,7 @@ Source: %{url}/archive/refs/tags/%{version}.tar.gz
 
 BuildRequires:  dub
 BuildRequires:  ldc
+BuildRequires:  libgphobos-static
 BuildRequires:  pandoc
 
 %description
