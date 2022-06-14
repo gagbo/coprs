@@ -62,7 +62,7 @@ them via keyboard, just like in classical tiling window managers
 %{_datadir}/icons/hicolor/32x32/status/bismuth-stair.svg
 %{_datadir}/icons/hicolor/32x32/status/bismuth-tile.svg
 %{_datadir}/icons/hicolor/64x64/categories/bismuth-kcm.svg
-%{_kf5_datadir}/qlogging_categories5/bismuth.categories
+%{_kf5_datadir}/qlogging-categories5/bismuth.categories
 %{_kf5_datadir}/kconf_update/bismuth_old_conf_ui.sh
 %{_kf5_datadir}/kconf_update/bismuth_old_conf_ui.upd
 %{_kf5_datadir}/kconf_update/bismuth_new_logger.upd
@@ -72,6 +72,8 @@ them via keyboard, just like in classical tiling window managers
 %changelog
 * Tue Jun 14 2022 Gerry Agbobada <git@gagbo.net> - 3.1.1-1
 - Update to version 3.1.1
+- Change the list of files installed
+
 * Sun Jan 30 2022 João Capucho <jcapucho7 at gmail.com> - 2.3.0-1
 - Update to version 2.3.0
 * Tue Dec 07 2021 João Capucho <jcapucho7 at gmail.com> - 2.2.0-1
