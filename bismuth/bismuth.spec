@@ -33,7 +33,6 @@ them via keyboard, just like in classical tiling window managers
 %dir %{_qt5_plugindir}/kcms
 %dir %{_kf5_datadir}/kpackage
 %dir %{_kf5_datadir}/kpackage/kcms
-%dir %{_kf5_datadir}/kwin/scripts/bismuth
 %dir %{_qt5_plugindir}/org.kde.kdecoration2
 %dir %{_qt5_qmldir}/org/kde/bismuth
 %dir %{_qt5_qmldir}/org/kde/bismuth/core
@@ -63,6 +62,7 @@ them via keyboard, just like in classical tiling window managers
 %{_datadir}/icons/hicolor/32x32/status/bismuth-stair.svg
 %{_datadir}/icons/hicolor/32x32/status/bismuth-tile.svg
 %{_datadir}/icons/hicolor/64x64/categories/bismuth-kcm.svg
+%{_kf5_datadir}/qlogging_categories5/bismuth.categories
 %{_kf5_datadir}/kconf_update/bismuth_old_conf_ui.sh
 %{_kf5_datadir}/kconf_update/bismuth_old_conf_ui.upd
 %{_kf5_datadir}/kconf_update/bismuth_new_logger.upd
