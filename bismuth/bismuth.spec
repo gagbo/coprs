@@ -30,47 +30,46 @@ them via keyboard, just like in classical tiling window managers
 %files
 %doc README.md
 %license LICENSE
-%dir %{_kf5_plugindir}/kcms
-%dir %{_kf5_sharedir}/kpackage
-%dir %{_kf5_sharedir}/kpackage/kcms
-%dir %{_kf5_plugindir}/org.kde.kdecoration2
+%dir %{_libdir}/qt5/plugins/kcms
+%dir %{_datarootdir}/kpackage
+%dir %{_datarootdir}/kpackage/kcms
+%dir %{_libdir}/qt5/plugins/org.kde.kdecoration2
 %dir %{_kf5_qmldir}/org/kde/bismuth
 %dir %{_kf5_qmldir}/org/kde/bismuth/core
 %{_datarootdir}/kservices5/
 %{_datarootdir}/kwin/
-%{_kf5_plugindir}/org.kde.kdecoration2/bismuth_kdecoration.so
-%{_kf5_plugindir}/kcms/kcm_bismuth.so
+%{_libdir}/qt5/plugins/org.kde.kdecoration2/bismuth_kdecoration.so
+%{_libdir}/qt5/plugins/kcms/kcm_bismuth.so
 %{_kf5_qmldir}/org/kde/bismuth/core/libbismuth_core.so
 %{_kf5_qmldir}/org/kde/bismuth/core/qmldir
-%{_kf5_configkcfgdir}/bismuth_config.kcfg
-%{_kf5_iconsdir}/hicolor/scalable/apps/bismuth.svg
-%{_kf5_iconsdir}/hicolor/16x16/status/bismuth-column.svg
-%{_kf5_iconsdir}/hicolor/16x16/status/bismuth-floating.svg
-%{_kf5_iconsdir}/hicolor/16x16/status/bismuth-monocle.svg
-%{_kf5_iconsdir}/hicolor/16x16/status/bismuth-quarter.svg
-%{_kf5_iconsdir}/hicolor/16x16/status/bismuth-spiral.svg
-%{_kf5_iconsdir}/hicolor/16x16/status/bismuth-spread.svg
-%{_kf5_iconsdir}/hicolor/16x16/status/bismuth-stair.svg
-%{_kf5_iconsdir}/hicolor/16x16/status/bismuth-tile.svg
-%{_kf5_iconsdir}/hicolor/22x22/categories/bismuth-kcm.svg
-%{_kf5_iconsdir}/hicolor/32x32/status/bismuth-column.svg
-%{_kf5_iconsdir}/hicolor/32x32/status/bismuth-floating.svg
-%{_kf5_iconsdir}/hicolor/32x32/status/bismuth-monocle.svg
-%{_kf5_iconsdir}/hicolor/32x32/status/bismuth-quarter.svg
-%{_kf5_iconsdir}/hicolor/32x32/status/bismuth-spiral.svg
-%{_kf5_iconsdir}/hicolor/32x32/status/bismuth-spread.svg
-%{_kf5_iconsdir}/hicolor/32x32/status/bismuth-stair.svg
-%{_kf5_iconsdir}/hicolor/32x32/status/bismuth-tile.svg
-%{_kf5_iconsdir}/hicolor/64x64/categories/bismuth-kcm.svg
+%{_datarootdir}/config.kcfg/bismuth_config.kcfg
+%{_iconsdir}/hicolor/scalable/apps/bismuth.svg
+%{_iconsdir}/hicolor/16x16/status/bismuth-column.svg
+%{_iconsdir}/hicolor/16x16/status/bismuth-floating.svg
+%{_iconsdir}/hicolor/16x16/status/bismuth-monocle.svg
+%{_iconsdir}/hicolor/16x16/status/bismuth-quarter.svg
+%{_iconsdir}/hicolor/16x16/status/bismuth-spiral.svg
+%{_iconsdir}/hicolor/16x16/status/bismuth-spread.svg
+%{_iconsdir}/hicolor/16x16/status/bismuth-stair.svg
+%{_iconsdir}/hicolor/16x16/status/bismuth-tile.svg
+%{_iconsdir}/hicolor/22x22/categories/bismuth-kcm.svg
+%{_iconsdir}/hicolor/32x32/status/bismuth-column.svg
+%{_iconsdir}/hicolor/32x32/status/bismuth-floating.svg
+%{_iconsdir}/hicolor/32x32/status/bismuth-monocle.svg
+%{_iconsdir}/hicolor/32x32/status/bismuth-quarter.svg
+%{_iconsdir}/hicolor/32x32/status/bismuth-spiral.svg
+%{_iconsdir}/hicolor/32x32/status/bismuth-spread.svg
+%{_iconsdir}/hicolor/32x32/status/bismuth-stair.svg
+%{_iconsdir}/hicolor/32x32/status/bismuth-tile.svg
+%{_iconsdir}/hicolor/64x64/categories/bismuth-kcm.svg
 %{_datadir}/kconf_update/bismuth_old_conf_ui.sh
 %{_datadir}/kconf_update/bismuth_old_conf_ui.upd
 %{_datadir}/kconf_update/bismuth_new_logger.upd
 %{_datadir}/kconf_update/bismuth_shortcuts_category.upd
-%{_kf5_debugdir}/bismuth.categories
-%{_kf5_sharedir}/kpackage/kcms/kcm_bismuth/
+%{_datarootdir}/kpackage/kcms/kcm_bismuth/
 
 %changelog
-* Tue Jun 14 2022 João Capucho <git@gagbo.net> - 3.1.1-1
+* Tue Jun 14 2022 Gerry Agbobada <git@gagbo.net> - 3.1.1-1
 - Update to version 3.1.1
 * Sun Jan 30 2022 João Capucho <jcapucho7 at gmail.com> - 2.3.0-1
 - Update to version 2.3.0
