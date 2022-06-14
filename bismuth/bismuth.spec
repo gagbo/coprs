@@ -21,7 +21,7 @@ them via keyboard, just like in classical tiling window managers
 %autosetup
 
 %build
-%cmake -G Ninja -DCMAKE_BUILD_TYPE=RelWithDebInfo -DUSE_TSC=OFF
+%cmake_kf5 -G Ninja -DCMAKE_BUILD_TYPE=RelWithDebInfo -DUSE_TSC=OFF
 %cmake_build
 
 %install
