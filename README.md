@@ -2,6 +2,10 @@
 
 This repo is my staging zone to package some software in Fedora
 
+## Bismuth
+
+[![Copr build status](https://copr.fedorainfracloud.org/coprs/gagbo/bismuth/package/bismuth/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/gagbo/bismuth/package/bismuth/)
+
 ## Trash-d
 
 [![Copr build status](https://copr.fedorainfracloud.org/coprs/gagbo/trash-d/package/trash-d/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/gagbo/trash-d/package/trash-d/)
