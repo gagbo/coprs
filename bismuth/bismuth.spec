@@ -11,7 +11,7 @@ BuildRequires:  cmake ninja-build extra-cmake-modules npm
 BuildRequires:  kf5-kconfigwidgets-devel qt5-qtbase-devel qt5-qtbase-private-devel
 BuildRequires:  qt5-qtdeclarative-devel qt5-qtquickcontrols2-devel qt5-qtsvg-devel 
 BuildRequires:  qt5-qtfeedback-devel kf5-kcmutils-devel kf5-ki18n-devel kf5-kdeclarative-devel
-BuildRequires:  kf5-kglobalaccel-devel
+BuildRequires:  kf5-kglobalaccel-devel kdecoration-devel
 
 %description
 KDE Plasma extension, that lets you tile your windows automatically and manage
