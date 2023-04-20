@@ -1,7 +1,7 @@
 Summary: A near drop-in replacement for rm that uses the trash bin
 Name: trash-d
 Version: 19
-Release: 2%{?dist}
+Release: 3%{?dist}
 URL: https://github.com/rushsteve1/trash-d
 License: MIT
 Source: %{url}/archive/refs/tags/%{version}.tar.gz
@@ -23,7 +23,7 @@ pandoc -s -t man -o trash.man MANUAL.md
 gzip ./trash.man
 
 %install
-install -Dm 755 ./trash-d ${RPM_BUILD_ROOT}/usr/bin/trash
+install -Dm 755 ./build/trash ${RPM_BUILD_ROOT}/usr/bin/trash
 install -Dm 444 ./trash.man.gz ${RPM_BUILD_ROOT}/usr/share/man/trash.1.gz
 
 %check
@@ -36,6 +36,9 @@ dub test
 %{_mandir}/trash.1.*
 
 %changelog
+* Thu Apr 20 2023 Gerry Agbobada <git@gagbo.net> - 19-3
+- Seek trash binary in the new build folder
+
 * Thu Apr 20 2023 Gerry Agbobada <git@gagbo.net> - 19-2
 - Rename the built target after change
 
