@@ -1,7 +1,7 @@
 Summary: A near drop-in replacement for rm that uses the trash bin
 Name: trash-d
-Version: 17
-Release: 3%{?dist}
+Version: 19
+Release: 1%{?dist}
 URL: https://github.com/rushsteve1/trash-d
 License: MIT
 Source: %{url}/archive/refs/tags/%{version}.tar.gz
@@ -36,6 +36,9 @@ dub test
 %{_mandir}/trash.1.*
 
 %changelog
+* Thu Apr 20 2023 Gerry Agbobada <git@gagbo.net> - 19-1
+- Bump version to 19
+
 * Sat Jun 11 2022 Gerry Agbobada <git@gagbo.net> - 17-3
 - Remove gcc tooclhain from build requires
 
